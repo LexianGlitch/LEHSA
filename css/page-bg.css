@@ -1,0 +1,47 @@
+body.transparent-body {
+    background-color: transparent; 
+    position: relative;
+}
+
+.page-bg-slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Se va hasta el fondo de todo */
+}
+
+.bg-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre toda la pantalla sin deformarse */
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; /* Transición suave */
+}
+
+.bg-slide.active {
+    opacity: 1; /* Solo la imagen con 'active' se ve */
+}
+
+.page-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(12, 12, 12, 0.75); /* Tinte oscuro (mismo tono que tu branding) */
+    z-index: -1; /* Encima de las fotos, debajo del texto */
+    backdrop-filter: blur(2px); /* Opcional: desenfoca levemente la foto */
+}
+
+.hero.transparent-hero {
+    background-color: transparent; /* Quita el gris sólido */
+    min-height: 100vh; /* Asegura pantalla completa */
+}
+
+/* El Header se mantiene igual, gracias a tu CSS original 
+   que ya tiene rgba y blur, se verá increíble sobre las fotos */

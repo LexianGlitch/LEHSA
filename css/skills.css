@@ -1,0 +1,36 @@
+/* Skills */
+.service-focus {
+    background-color: var(--color-dark-bg);
+    padding-top: 50px;
+}
+
+.subsection-title {
+    font-size: 2em;
+    color: var(--color-accent-secondary);
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px 30px;
+    margin-bottom: 50px;
+}
+
+.skills-list li {
+    font-size: 1.1em;
+    color: var(--color-text-light);
+    padding-left: 20px;
+    position: relative;
+}
+
+.skills-list li::before {
+    content: '•';
+    color: var(--color-accent-primary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.9em;
+}

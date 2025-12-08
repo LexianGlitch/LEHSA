@@ -1,0 +1,43 @@
+.split-layout {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.special-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    min-width: 300px;
+}
+
+.special-item {
+    background-color: var(--color-dark-bg);
+    padding: 25px;
+    text-align: center;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.special-item:hover {
+    background-color: rgba(255, 215, 0, 0.05);
+}
+
+.special-item i {
+    font-size: 2em;
+    color: var(--color-accent-secondary);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.special-item span {
+    font-weight: 600;
+    color: var(--color-text-light);
+}
