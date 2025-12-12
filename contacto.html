@@ -40,10 +40,18 @@
 
     <main>
         
-        <section class="section" style="padding-top: 150px;">
-<form class="contact-form" action="https://formsubmit.co/alexcito271006@gmail.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
+      <section class="section" style="padding-top: 150px;">
+    <form class="contact-form"
+      action="https://api.web3forms.com/submit"
+      method="POST">
+
+    <input type="hidden" name="access_key" value="fc0a2786-66c1-417d-aff2-77e4660e6bc5">
+
+    <input type="hidden" name="subject" value="Nueva solicitud de cotización">
+    <input type="hidden" name="from_name" value="COTIZACIÓN LEHSA">
+    <input type="hidden" name="redirect" value="https://lexianglitch.github.io/LEHSA/index.html">
+
+    <input type="checkbox" name="botcheck" style="display:none">
 
     <div class="container contact-grid">
         <div class="contact-form-side">
@@ -74,6 +82,7 @@
                     <option value="MATERIAL ELECTRICO">MATERIAL ELECTRICO</option>
                     <option value="INSTALCION DE ACCESESORIOS">INSTALCION DE ACCESESORIOS</option>
                     <option value="INSTALACION DE INTERRUPTORES">INSTALACION DE INTERRUPTORES</option>
+                    <option value="INSTALACION DE INTERRUPTORES">Otro</option>
                 </select>
             </div>
 
@@ -154,4 +163,5 @@
 </body>
 
 </html>
+
 
